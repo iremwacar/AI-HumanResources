@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>İşe Alım Tahmini</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h2>İşe Alım Tahmini Formu</h2>
+    <form method="post">
+        <label>Tecrübe Yılı:</label><br>
+        <input type="number" step="0.1" name="tecrube" value="{{ tecrube or '' }}"><br>
+        <label>Teknik Sınav Puanı:</label><br>
+        <input type="number" step="0.1" name="puan" value="{{ puan or '' }}"><br><br>
+        <input type="submit" value="Tahmin Et">
+    </form>
+
+    {% if result is not none %}
+    <h3>Sonuç: {{ result }}</h3>
+    {% endif %}
+</body>
+</html>

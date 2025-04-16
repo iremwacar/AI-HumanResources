@@ -1,0 +1,15 @@
+/* static/style.css */
+body {
+    font-family: Arial, sans-serif;
+    max-width: 500px;
+    margin: auto;
+    padding: 40px;
+    background: #f2f2f2;
+    text-align: center;
+}
+
+input {
+    padding: 8px;
+    margin: 10px;
+    width: 100%;
+}
